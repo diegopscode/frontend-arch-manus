@@ -1,0 +1,63 @@
+@import "./tokens.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base Styles */
+* {
+  @apply box-border;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply bg-surface-primary text-text-primary font-sans;
+}
+
+/* Typography */
+h1 {
+  @apply text-2xl font-bold;
+}
+
+h2 {
+  @apply text-xl font-bold;
+}
+
+h3 {
+  @apply text-lg font-bold;
+}
+
+h4 {
+  @apply font-bold;
+}
+
+p {
+  @apply leading-relaxed;
+}
+
+a {
+  @apply text-brand-primary hover:text-brand-secondary transition-colors;
+}
+
+/* Form Elements */
+input,
+textarea,
+select {
+  @apply w-full px-md py-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary;
+}
+
+button {
+  @apply transition-colors;
+}
+
+/* Utility Classes */
+.container {
+  @apply mx-auto max-w-7xl px-md;
+}
+
+.visually-hidden {
+  @apply absolute w-px h-px p-0 m-[-1px] overflow-hidden clip-[rect(0,0,0,0)] border-0;
+}

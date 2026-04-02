@@ -1,0 +1,25 @@
+{
+  "name": "@ecommerce/ui-primitives",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Basic UI components (Button, Input, Modal, etc.)",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "eslint \"src/**/*.ts*\" --config ../../packages/config-eslint/library.js",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@ecommerce/config-typescript": "workspace:*",
+    "@ecommerce/theme-core": "workspace:*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}

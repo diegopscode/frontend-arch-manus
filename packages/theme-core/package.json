@@ -1,0 +1,20 @@
+{
+  "name": "@ecommerce/theme-core",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Core theme with design tokens and base Tailwind configuration",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "eslint \"src/**/*.ts*\" --config ../../packages/config-eslint/library.js",
+    "type-check": "tsc --noEmit"
+  },
+  "files": ["dist", "src/styles"],
+  "devDependencies": {
+    "@ecommerce/config-typescript": "workspace:*",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3"
+  }
+}
